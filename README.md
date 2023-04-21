@@ -1,10 +1,10 @@
 # useless projects
-just pointless projects. nothing else. don't expect a complex app or a highly efficcient code here. just the product of boredom. if you are looking for more professional projects, don't look at this repository, just a warning.
+just pointless projects. nothing else. don't expect a complex app or a highly efficient code here. just the product of boredom. if you are looking for more professional projects, don't look at this repository.
 ### notes
 - the reason i write this README in lower case is because, for me, it takes away from the seriousness of the repository. obviously most of these projects are mere pastimes that come out of laughts.
 - i repeat, don't take this as a professional repository. the code here can be made much better, but as the title says, they're useless and nonsense projects.
 - if you feel like trying a project, i hope you have fun! and don't forget giving any feedback if you consider necessary :)
-- don't take the "possible features" seriously. it's very probable that they never come.
+- don't take the "possible features" seriously. it's probable that they never come.
 
 # projects made so far:
 ## arduino breathalyzer
@@ -26,6 +26,7 @@ the idea for this project came up during a really boring class. it was developed
 - changing color
 - random direction at the beginning
 - speed changing
+<a href="url"><img src="dvd/demo.gif" align="center" height="254" width="142"></a>
 
 ## pi generator (not even started)
 ok this is actually epic. it generates pi using random numbers. but i haven't made it yet. but i'll make it. i promise.
