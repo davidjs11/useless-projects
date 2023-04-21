@@ -18,7 +18,6 @@ just an arduino project that measures the alcohol level in a gas. this project w
 
 ## bouncing dvd logo
 the idea for this project came up during a really boring class. it was developed in less than 30 minutes, so the code is obviously very improvable. it uses sdl2 as graphic library.
-<a href="url"><img src="dvd/demo.gif" align="center" height="142" width="254"></a>
 
 #### how to compile
 - just write `make` on the project folder and done! 
@@ -28,6 +27,10 @@ the idea for this project came up during a really boring class. it was developed
 - changing color
 - random direction at the beginning
 - speed changing
+
+
+<a href="url"><img src="dvd/demo.gif" align="center" height="142" width="254"></a>
+
 
 ## pi generator (not even started)
 ok this is actually epic. it generates pi using random numbers. but i haven't made it yet. but i'll make it. i promise.
