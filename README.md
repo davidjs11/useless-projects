@@ -1,9 +1,22 @@
-# useless arduino projects
-i don't have many components; there won't be a lot of projects at the moment; also, i should be studying for college.....
+# useless projects
+just pointless projects. nothing else. don't expect a complex app or a highly efficcient code here. just the product of boredom. if you are looking for more professional projects, don't look at this repository, just a warning.
+### notes
+- the reason i write this README in lower case is because, for me, it takes away from the seriousness of the repository. obviously most of these projects are mere pastimes that come out of laughts.
+- i repeat, don't take this as a professional repository. the code here can be made much better, but as the title says, they're useless and nonsense projects.
+- if you feel like trying a project, i hope you have fun! and don't forget giving any feedback if you consider necessary :)
 
-## projects I've made so far
-- **breathalyzer** with the MQ3 sensor (in development)
-
-## how to use the scripts
+# projects made so far:
+## arduino breathalyzer (neutral evil)
+just an arduino project that measures the alcohol level in a gas. this project was made using the mq3 sensor, and showing the output through the usb serial port. it is currently in development (but i don't have the necessary components). i haven't tested it yet while drinking, but it will happen someday.
+##### how to use the arduino scripts
 - the `load.sh` script loads a project onto the arduino board. you must insert the .ino file as an argument.
-- the `serial.sh` script outputs the serial signal on the terminal. uou must insert the correct baudrate (I'll use 9600 in every project).
+- the `serial.sh` script outputs the serial signal on the terminal. you must insert the correct baudrate (I'll use 9600 in every arduino project).
+
+## bouncing dvd logo (don't uploaded yet)
+the idea for this project came up during a really boring class. it was developed in less than 30 minutes, so the code is obviously very improvable. it uses sdl2 as graphic library.
+
+## pi generator (not even started)
+ok this is actually epic. it generates pi using random numbers. but i haven't made it yet. but i'll make it. i promise.
+
+## low quality music generator (i started this one but i forgot its existence)
+coding in python isn't funny anymore, so this will take much more time to come...
