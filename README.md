@@ -24,12 +24,11 @@ the idea for this project came up during a really boring class. it was developed
 - if you stare at the screen hoping that it touches the corner, reconsider the way you employ your time (ok i'm not gonna lie i did it once and it touched the corner...)
 #### possible future features
 - collision counter
-- changing color
 - random direction at the beginning
 - speed changing
 
 
-<a href="url"><img src="dvd/demo.gif" align="center" height="142" width="254"></a>
+<p align="center"><img src="dvd/demo.gif" height="284" width="508"></p>
 
 
 ## pi generator (not even started)

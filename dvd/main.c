@@ -13,6 +13,7 @@ struct logo
     SDL_Texture *texture;
     float posX, posY;
     float speedX, speedY;
+    int r, g, b;
 };
 
 // functions
@@ -41,6 +42,9 @@ int main(void)
     dvd.speedY = -2.0f;
     dvd.dvdLogo = IMG_Load("logo.png");
     dvd.texture = SDL_CreateTextureFromSurface(rend, dvd.dvdLogo);
+    dvd.r = 255;
+    dvd.g = 0;
+    dvd.b = 0;
 
     // game loop
     while(running)
@@ -62,9 +66,27 @@ int main(void)
     }
 }
 
-// wow a one line function!!! (nah soon it will have more lines)
 void renderLogo(SDL_Renderer *rend, struct logo *dvd)
 {
+    // color fading algorithm
+    SDL_SetTextureColorMod(dvd->texture, dvd->r, dvd->g, dvd->b);
+    if(dvd->r > 0 && dvd->b == 0)
+    {
+        (dvd->r)--;
+        (dvd->g)++;
+    }
+    if(dvd->g > 0 && dvd->r == 0)
+    {
+        (dvd->g)--;
+        (dvd->b)++;
+    }
+    if(dvd->b > 0 && dvd->g == 0)
+    {
+        (dvd->r)++;
+        (dvd->b)--;
+    }
+
+    // render the logo
     SDL_RenderCopy(rend, dvd->texture, NULL, &(dvd->rect));
 }
 
