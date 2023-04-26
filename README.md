@@ -23,7 +23,7 @@ the idea for this project came up during a really boring class. it was developed
 - just write `make` on the project folder and done! 
 - if you stare at the screen hoping that it touches the corner, reconsider the way you employ your time (ok i'm not gonna lie i did it once and it touched the corner...)
 #### possible future features
-- collision counter
+- print the collision counter on screen
 - random direction at the beginning
 - speed changing
 

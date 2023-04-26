@@ -14,6 +14,7 @@ struct logo
     float posX, posY;
     float speedX, speedY;
     int r, g, b;
+    int collisionCounter;
 };
 
 // functions
@@ -45,6 +46,7 @@ int main(void)
     dvd.r = 255;
     dvd.g = 0;
     dvd.b = 0;
+    dvd.collisionCounter = 0;
 
     // game loop
     while(running)
@@ -97,8 +99,19 @@ void moveLogo(struct logo *dvd)
     dvd->posY += dvd->speedY;
 
     // collision detection
-    dvd->speedX *= (checkHorizontalCollision(dvd)) ? -1 : 1;
-    dvd->speedY *= (checkVerticalCollision(dvd)) ? -1 : 1;
+    if (checkHorizontalCollision(dvd))
+    {
+        dvd->speedX *= -1;
+        dvd->collisionCounter++;
+        printf("collisons: %d\n", dvd->collisionCounter);
+    }
+
+    if (checkVerticalCollision(dvd))
+    {
+        dvd->speedY *= -1;
+        dvd->collisionCounter++;
+        printf("collisons: %d\n", dvd->collisionCounter);
+    }
 
     // update rect position
     dvd->rect.x = dvd->posX;
