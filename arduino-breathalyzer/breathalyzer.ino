@@ -11,29 +11,32 @@
 ///                                             ///
 ///////////////////////////////////////////////////
 
-#define SENSOR_PIN A0 // this pin must be analog
+#define SENSOR_PIN A0
+
 float sensorVal;
 
 void setup()
 {
-    Serial.begin(9600); // init the serial port
-    pinMode(SENSOR_PIN, INPUT); // init the analog pin.
 
-    // wait for the sensor to heat up
-    Serial.println("heating up sensor...");
-    delay(20000);
-    Serial.println("done!");
+    // iniciar el sensor
+    Serial.begin(9600);
+    pinMode(SENSOR_PIN, INPUT);
+    delay(20000); // calentarlo
 }
 
 void loop()
 {
-    // read the alcohol level
-    sensorVal = analogRead(SENSOR_PIN);
+    float adcValue = 0; 
+    for(int i = 0; i < 20; i++){
+        adcValue = analogRead(SENSOR_PIN);
+        delay(10);
+    }
 
-    // print the value
-    Serial.print("alcohol: ");
-    Serial.println(sensorVal);
-    delay(500);
+    float val = (adcValue/20) * (5.0/1024.0);
+    float mgL = 0.67 * val;
+
+    // leer valor del sensor
+    Serial.print(mgL);
+    Serial.print(" mgL");
+    Serial.println();
 }
-
-// yeah that's all. what did you expect? a really complex code??
